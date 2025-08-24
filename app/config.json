@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "name": "VitaminA",
+            "recommended": 900,
+            "unit": "μgRAE"
+        },
+        {
+            "name": "VitaminC",
+            "recommended": 100,
+            "unit": "mg"
+        }
+    ]
+}
