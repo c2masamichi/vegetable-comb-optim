@@ -47,10 +47,13 @@ def main():
                     names[1]: j,
                     names[2]: k,
                 }
+
+                # TODO: keyのハードコーディングを修正
                 nutrients = {
                     "VitaminA": 0,
                     "VitaminC": 0,
                 }
+
                 for key in nutrients:
                     nutrients[key] = sum([
                         VEGITABLES[x][key] * grams[names[x]] / 100 for x in range(3)
@@ -71,6 +74,8 @@ def main():
             new_sum = sum(r.grams.values())
             if new_sum <= max_sum:
                 max_sum = new_sum
+                # TODO: 単位を追加
+                # TODO: 可読性が悪いので改善
                 print(r.grams)
                 print(r.nutrients)
                 print('----------')
